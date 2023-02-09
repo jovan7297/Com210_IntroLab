@@ -1,5 +1,4 @@
 //Jovanni Lozzi
-//Problem 1
 
 package com210introlab;
 
@@ -32,6 +31,21 @@ public class Com210IntroLab
     
     double average = (price1 +price2 + price3)/3;
     
-    System.out.println("The average cost of the price is "+average);
+    String peas = ("peas");
+    
+    int x =0;
+    
+    if (item1.equals(peas))
+        x ++;
+    if (item2.equals(peas))
+        x ++;
+    if (item3.equals(peas))
+        x ++;
+    
+    if (x > 0)
+        System.out.println("The average cost of the price is "+ average);
+    else
+        System.out.println("no average output");
+    
     }//Main Method Ends  
 }//Class Ends
