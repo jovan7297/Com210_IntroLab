@@ -1,7 +1,7 @@
 //Jovanni Lozzi
 //Problem 2
 
-package LabProblem2;
+package labproblem2;
 
 import javax.swing.JOptionPane;
 
@@ -36,11 +36,11 @@ public class LabProblem2
     
     int x =0;
     
-    if (item1.equals(peas))
+    if (item1.toLowerCase().equals(peas))
         x ++;
-    if (item2.equals(peas))
+    if (item2.toLowerCase().equals(peas))
         x ++;
-    if (item3.equals(peas))
+    if (item3.toLowerCase().equals(peas))
         x ++;
     
     if (x > 0)
