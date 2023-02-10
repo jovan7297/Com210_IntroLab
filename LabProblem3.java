@@ -25,19 +25,20 @@ public class LabProblem3 {//Class Begins
             System.out.println(ItemPrices[(i - 1)]);
         }// end for
 
-        String peas = ("Peas");
+        String peas = ("peas");
         int j = 0;
 
-        for (int x = 0; x < numItems; x++) {// start for
-            if (ItemNames[x].equals(peas)) 
-                j++;
-            Double totalPrice = 0;
-            
-            //totalPrice =ItemPrices[x] + totalPrice;
-        }// end for
+        Double totalPrice = 0.0;
 
-        
-        
+        for (int x = 0; x < numItems; x++) {// Start for
+            if (ItemNames[x].toLowerCase().equals(peas)) {//Start If
+                j++;
+            }//End If
+            totalPrice = ItemPrices[x] + totalPrice;
+        }// End for
+
+        Double averagePrice = totalPrice / numItems;
+
         if (j > 0) {
             System.out.println("The average cost of the price is " + averagePrice);
         } else {
